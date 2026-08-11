@@ -132,7 +132,26 @@ const SAINTS = [
         description: "نشأة البابا كيرلس وتكوينه الروحي والعلمي في الإسكندرية.",
         // TODO: حط مسار الفيديو الأول هنا
         videoUrl: "assets/videos/kyrillos-1.mp4",
-        questions: [placeholderQuestion(), placeholderQuestion(), placeholderQuestion()],
+        questions: [
+          {
+          question:"وُلد البابا كيرلس في",
+          options:["الإسكندرية","البرج","أنطاكية","أخميم"],
+          correctAnswer:1
+
+        }
+          , {
+          question:"من الذي اهتم بتعليم وتربية البابا كيرلس منذ صغره؟",
+          options:["البابا أثناسيوس"," خاله سيرابيون"," البابا ثاؤفيلس","نسطور"],
+          correctAnswer:3
+
+        }
+          , {
+          question:"رُسم البابا كيرلس بطريركًا سنة",
+          options:["401م","412م","431م","444م"],
+          correctAnswer:1
+
+        }
+        ],
       },
       {
         id: 2,
@@ -140,7 +159,26 @@ const SAINTS = [
         description: "رحلته في الخدمة الكنسية ودفاعه عن الإيمان المستقيم.",
         // TODO: حط مسار الفيديو الثاني هنا
         videoUrl: "assets/videos/kyrillos-2.mp4",
-        questions: [placeholderQuestion(), placeholderQuestion(), placeholderQuestion()],
+        questions: [
+        {
+          question:"من صاحب البدعة التي واجهها البابا كيرلس؟",
+          options:["أريوس","نسطور","مقدونيوس","سابيليوس"],
+          correctAnswer:1
+
+        }, 
+          {
+          question:"عقد البابا كيرلس مجمعًا محليًا في",
+          options:["أنطاكية","روما","الإسكندرية","أورشليم"],
+          correctAnswer:2
+
+        }, 
+          {
+          question:" البابا كيرلس شرح الإيمان المستقيم في",
+          options:["7 رسائل"," 10 رسائل"," 12 بندًا"," 15 رسالة"],
+          correctAnswer:2
+
+        }
+        ],
       },
       {
         id: 3,
@@ -148,7 +186,26 @@ const SAINTS = [
         description: "إرثه اللاهوتي وكتاباته التي ما زالت الكنيسة تعتمد عليها حتى اليوم.",
         // TODO: حط مسار الفيديو الثالث هنا
         videoUrl: "assets/videos/kyrillos-3.mp4",
-        questions: [placeholderQuestion(), placeholderQuestion(), placeholderQuestion()],
+        questions: [
+          {
+          question:"انعقد مجمع أفسس سنة",
+          options:["412م","425م","431م","444م"],
+          correctAnswer:2
+
+        }, 
+          {
+          question:"انتهى مجمع أفسس بقرار",
+          options:["تكريم نسطور","حرمان وعزل نسطور","اختيار بطريرك جديد","نقل العاصمة"],
+          correctAnswer:1
+
+        }, 
+          {
+          question:"تنيح البابا كيرلس في",
+          options:["20 بابه سنة 412م","3 أبيب سنة 444م","سنة 431م","سنة 356م"],
+          correctAnswer:1
+
+        }
+        ],
       },
     ],
   },
@@ -171,7 +228,19 @@ const SAINTS = [
         // TODO: حط مسار الفيديو الأول هنا
         videoUrl: "assets/videos/bishoy-kamel-1.mp4",
         questions: [
-          placeholderQuestion(), placeholderQuestion(), placeholderQuestion()
+          {
+          question:"كان ترتيب سامي بين إخوته ",
+          options:["الأول","الثالث","الخامس","الرابع"],
+          correctAnswer:3
+
+        }
+        , 
+        {
+          question:"ما الكلية والقسم الذي درس فيه سامي بجامعة الإسكندرية ",
+          options:["كلية الآداب قسم التاريخ","كلية العلوم قسم الجيولوجيا ","كلية الهندسة قسم العمارة ","كلية التربية قسم الرياضيات "],
+          correctAnswer:1
+
+        }
         ],
       },
       {
@@ -180,7 +249,18 @@ const SAINTS = [
         description: "رحلته في الكهنوت وحبه الخاص لخدمة الأطفال والشباب.",
         // TODO: حط مسار الفيديو الثاني هنا
         videoUrl: "assets/videos/bishoy-kamel-2.mp4",
-        questions: [placeholderQuestion(), placeholderQuestion(), placeholderQuestion()],
+        questions: [{
+          question:"اي من الخدمات التالية قام بها سامي كامل قبل سيامته كاهنا ",
+          options:["خدمة إعداد خدام ","خدمة ذوي الاحتياجات الخاصة ","خدمة مدارس الاحد (المرحلة الإعدادية)","خدمة المغتربين"],
+          correctAnswer:2
+
+        }, {
+          question:"كان ابونا بيشوي كامل كاهنا علي مذبح",
+          options:["العذراء مريم ","مارجرجس سبورتنج","الملاك ميخائيل ","ابو سيفين مصر القديمة"],
+          correctAnswer:1
+
+        }
+      ]
       },
       {
         id: 3,
@@ -188,7 +268,22 @@ const SAINTS = [
         description: "الأثر الذي تركه في حياة من عرفوه، وإرثه الروحي المستمر.",
         // TODO: حط مسار الفيديو الثالث هنا
         videoUrl: "assets/videos/bishoy-kamel-3.mp4",
-        questions: [placeholderQuestion(), placeholderQuestion(), placeholderQuestion()],
+        questions: [{
+          question:"ما الاسم الذي أطلقه ابونا بيشوي كامل علي دار الايتام بدلا من كلمة ملجأ ",
+          options:["جمعية مارجرجس لرعاية الطفولة والأمومة ","بيت الرعاية والمستقبل ","مؤسسة القديس يوسف للطفولة ","بيت المحبة والنور"],
+          correctAnswer:0
+
+        }, {
+          question:"كان ابونا بيشوي كامل يسمي مرض السرطان ",
+          options:["تجربة الجسد ","مرض الفردوس ","الهبة العلوية ","زهرة الآلام"],
+          correctAnswer:1
+
+        }, {
+          question:"اعترف المجمع المقدس للكنيسة القبطية بقداسه ابونا بيشوي كامل ",
+          options:["يناير 2019","سبتمبر 2016","يونيو 2022","مارس 2025"],
+          correctAnswer:2
+
+        }],
       },
     ],
   },
