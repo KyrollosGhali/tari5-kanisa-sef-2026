@@ -488,5 +488,13 @@ button { font-family: var(--font-body); cursor: pointer; }
 .page-logo--right { right: 16px; }
 
 @media (max-width: 860px) {
-  .page-logo { display: none; }
+  .page-logo {
+    display: block;
+    width: 128px;
+    height: 40px;
+    top: 12px;
+  }
+
+  .page-logo--left { left: 10px; }
+  .page-logo--right { right: 10px; }
 }
