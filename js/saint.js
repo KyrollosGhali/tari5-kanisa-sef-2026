@@ -140,7 +140,7 @@ function renderMain() {
 
   if (state.phase === PHASE.VIDEO) {
     const video = state.saint.videos[state.videoIndex];
-    flow.appendChild(buildVideoPlayer(video));
+    flow.appendChild(buildVideoPlayer(video, state.videoIndex, state.saint.videos.length));
 
     if (state.videoWatched) {
       const quizBtn = document.createElement("button");
@@ -194,9 +194,11 @@ function buildSteps() {
 /* =========================================================
    VIDEO PLAYER
    ========================================================= */
-function buildVideoPlayer(video) {
+function buildVideoPlayer(video, videoIndex, totalVideos) {
   const wrap = document.createElement("div");
   wrap.className = "video-player animate-fade-in";
+  const isFirstVideo = videoIndex === 0;
+  const isLastVideo = videoIndex === totalVideos - 1;
 
   wrap.innerHTML = `
     <div class="video-player__frame">
@@ -208,12 +210,31 @@ function buildVideoPlayer(video) {
       <h3 class="video-player__title">${video.title}</h3>
       <p class="video-player__description">${video.description}</p>
       <p class="video-player__hint" data-hint>أكمل مشاهدة الفيديو حتى النهاية لفتح الأسئلة.</p>
+      <div class="video-player__actions">
+        <button class="btn btn-secondary video-player__nav" type="button" data-prev ${isFirstVideo ? "disabled" : ""}>الفيديو السابق</button>
+        <button class="btn btn-primary video-player__nav" type="button" data-next ${isLastVideo ? "disabled" : ""}>الفيديو التالي</button>
+      </div>
     </div>
   `;
 
   const videoEl = wrap.querySelector(".video-player__video");
   const frame = wrap.querySelector(".video-player__frame");
   const hint = wrap.querySelector("[data-hint]");
+  const prevBtn = wrap.querySelector("[data-prev]");
+  const nextBtn = wrap.querySelector("[data-next]");
+
+  function goToVideo(nextIndex) {
+    if (nextIndex < 0 || nextIndex >= totalVideos) return;
+    state.videoIndex = nextIndex;
+    state.phase = PHASE.VIDEO;
+    state.videoWatched = false;
+    state.resumeNotice = null;
+    renderHeader();
+    renderMain();
+  }
+
+  prevBtn.addEventListener("click", () => goToVideo(videoIndex - 1));
+  nextBtn.addEventListener("click", () => goToVideo(videoIndex + 1));
 
   videoEl.addEventListener("ended", () => {
     state.videoWatched = true;
