@@ -76,7 +76,18 @@ const SAINTS = [
         description: "كيف ترك أنطونيوس العالم وبدأ رحلته في طريق النسك والوحدة مع الله.",
         // TODO: حط مسار الفيديو الثاني هنا
         videoUrl: "assets/videos/antonios-2.mp4",
-        questions: [placeholderQuestion(), placeholderQuestion(), placeholderQuestion()],
+        questions: [
+          {
+            question: " اول مرة نزل فيها الأنبا انطونيوس الإسكندرية كانت سنة ",
+            options: ["131 م", "313 م", "311 م", "331 م"],
+            correctAnswer: 3
+          }
+          , {
+            question: "نزول الأنبا انطونيوس تانى مرة الإسكندرية كان علشان يدافع عن المسيحية ضد ",
+            options: ["اريوس", "مقدونيوس", "نسطور", "أوطاخى"],
+            correctAnswer: 0
+          }
+        ],
       },
       {
         id: 3,
@@ -84,7 +95,22 @@ const SAINTS = [
         description: "جهاده الروحي في البرية الشرقية ودوره في تأسيس الرهبنة كحركة روحية عالمية.",
         // TODO: حط مسار الفيديو الثالث هنا
         videoUrl: "assets/videos/antonios-3.mp4",
-        questions: [placeholderQuestion(), placeholderQuestion(), placeholderQuestion()],
+        questions: [
+          {
+            question: " ساب الأنبا انطونيوس .... رسائل لأديرة مختلفة فى مصر ",
+            options: ["5", "6", "7", "8"],
+            correctAnswer: 2
+          }, 
+          {
+            question: "تنيح الأنبا انطونيوس فى ",
+            options: ["22 طوبة", "22 امشير", "22 برمهات", "22 بشنس"],
+            correctAnswer: 0
+          }, 
+          {
+            question: " من كتب سيرة حياة الأنبا انطونيوس  ",
+            options: ["الانبا اثناسيوس", "الانبا شنودة رئيس المتوحدين", "البابا كيرلس عمود الدين ", "الانبا ديسقوروس"],
+            correctAnswer: 0
+          }],
       },
     ],
   },
