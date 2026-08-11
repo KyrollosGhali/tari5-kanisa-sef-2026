@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>رحلة في تاريخ كنيستنا</title>
+  <meta name="description" content="موقع تعليمي تفاعلي عن تاريخ الكنيسة وحياة آباء وقديسي الكنيسة القبطية الأرثوذكسية" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="navbar__inner container">
+      <a href="index.html" class="navbar__brand">
+        <span class="navbar__brand-mark" aria-hidden="true">☨</span>
+        <span>رحلة في تاريخ كنيستنا</span>
+      </a>
+
+      <nav class="navbar__links navbar__links--desktop" aria-label="التنقل الرئيسي">
+        <a href="index.html" class="navbar__link is-active">الرئيسية</a>
+        <a href="saint.html?id=antonios" class="navbar__link">الأنبا أنطونيوس</a>
+        <a href="saint.html?id=kyrillos" class="navbar__link">البابا كيرلس</a>
+        <a href="saint.html?id=bishoyKamel" class="navbar__link">أبونا بيشوي كامل</a>
+      </nav>
+
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="فتح القائمة">
+        <span class="navbar__burger"></span>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" class="navbar__links navbar__links--mobile" aria-label="قائمة الجوال">
+      <a href="index.html" class="navbar__link is-active">الرئيسية</a>
+      <a href="saint.html?id=antonios" class="navbar__link">الأنبا أنطونيوس</a>
+      <a href="saint.html?id=kyrillos" class="navbar__link">البابا كيرلس</a>
+      <a href="saint.html?id=bishoyKamel" class="navbar__link">أبونا بيشوي كامل</a>
+    </nav>
+    
+    <!-- Page logos: left and right -->
+    <img src="assets/images/logo-right.svg" alt="شعار يمين" class="page-logo page-logo--right" />
+    <img src="assets/images/logo-left.svg" alt="شعار يسار" class="page-logo page-logo--left" />
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <svg class="hero__ornament" width="86" height="86" viewBox="0 0 86 86" fill="none" aria-hidden="true">
+      <path d="M4 4 C 30 4, 40 4, 40 4 M4 4 C 4 30, 4 40, 4 40" stroke="var(--color-gold)" stroke-width="2" stroke-linecap="round" />
+      <circle cx="4" cy="4" r="3.2" fill="var(--color-red)" />
+      <path d="M14 4 C 20 14, 14 20, 4 14" stroke="var(--color-gold)" stroke-width="1.4" fill="none" />
+      <path d="M4 22 C 12 24, 12 30, 22 30" stroke="var(--color-gold-pale)" stroke-width="1.2" fill="none" />
+      <path d="M28 4 C 28 12, 22 12, 22 4" stroke="var(--color-gold-pale)" stroke-width="1.2" fill="none" />
+    </svg>
+
+    <div class="container hero__inner">
+      <div class="hero__content animate-slide-up">
+        <p class="eyebrow">تاريخ الكنيسة القبطية الأرثوذكسية</p>
+        <h1 class="hero__title">رحلة في تاريخ كنيستنا</h1>
+        <p class="hero__subtitle">شاهد، اتعلم، اختبر نفسك، واكتشف حياة آباء وقديسي الكنيسة.</p>
+        <a href="#journey" class="btn btn-primary hero__cta">
+          ابدأ الرحلة
+          <span aria-hidden="true">←</span>
+        </a>
+      </div>
+
+      <div class="hero__illustration animate-fade-in" aria-hidden="true">
+        <div class="hero__illustration-frame">
+          <span class="hero__cross">☨</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how" aria-label="طريقة استخدام الموقع">
+    <div class="container how__grid">
+      <div class="how__step animate-slide-up" style="animation-delay: 0s">
+        <span class="how__icon" aria-hidden="true">▶</span>
+        <h3 class="how__title">شاهد</h3>
+        <p class="how__text">شاهد الفيديو وتابع القصة.</p>
+      </div>
+      <div class="how__step animate-slide-up" style="animation-delay: 0.08s">
+        <span class="how__icon" aria-hidden="true">✓</span>
+        <h3 class="how__title">اختبر نفسك</h3>
+        <p class="how__text">بعد كل فيديو، جاوب على الأسئلة.</p>
+      </div>
+      <div class="how__step animate-slide-up" style="animation-delay: 0.16s">
+        <span class="how__icon" aria-hidden="true">📖</span>
+        <h3 class="how__title">اجمع معرفتك</h3>
+        <p class="how__text">بعد إكمال الرحلة، احصل على الـ Comic Book.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY DASHBOARD ============ -->
+  <section id="journey" class="dashboard">
+    <div class="container">
+      <div class="dashboard__header">
+        <p class="eyebrow">تقدّمك حتى الآن</p>
+        <h2>رحلتك التعليمية</h2>
+      </div>
+
+      <!-- Cards are injected here by js/home.js, reading js/data.js + saved progress -->
+      <div class="dashboard__grid" id="dashboard-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>☨ رحلة في تاريخ كنيستنا — مادة تاريخ الكنيسة</p>
+      <p class="site-footer__muted">مصمم لمساعدة الطلاب على التعلم والمراجعة بطريقة تفاعلية.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

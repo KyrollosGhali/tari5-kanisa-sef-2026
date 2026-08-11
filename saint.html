@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>رحلة في تاريخ كنيستنا</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="navbar__inner container">
+      <a href="index.html" class="navbar__brand">
+        <span class="navbar__brand-mark" aria-hidden="true">☨</span>
+        <span>رحلة في تاريخ كنيستنا</span>
+      </a>
+
+      <nav class="navbar__links navbar__links--desktop" aria-label="التنقل الرئيسي" id="nav-desktop">
+        <a href="index.html" class="navbar__link">الرئيسية</a>
+        <a href="saint.html?id=antonios" class="navbar__link" data-saint-id="antonios">الأنبا أنطونيوس</a>
+        <a href="saint.html?id=kyrillos" class="navbar__link" data-saint-id="kyrillos">البابا كيرلس</a>
+        <a href="saint.html?id=bishoyKamel" class="navbar__link" data-saint-id="bishoyKamel">أبونا بيشوي كامل</a>
+      </nav>
+
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="فتح القائمة">
+        <span class="navbar__burger"></span>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" class="navbar__links navbar__links--mobile" aria-label="قائمة الجوال">
+      <a href="index.html" class="navbar__link">الرئيسية</a>
+      <a href="saint.html?id=antonios" class="navbar__link" data-saint-id="antonios">الأنبا أنطونيوس</a>
+      <a href="saint.html?id=kyrillos" class="navbar__link" data-saint-id="kyrillos">البابا كيرلس</a>
+      <a href="saint.html?id=bishoyKamel" class="navbar__link" data-saint-id="bishoyKamel">أبونا بيشوي كامل</a>
+    </nav>
+  </header>
+
+  <!-- ============ SAINT HEADER (built by saint.js) ============ -->
+  <div id="saint-header-root"></div>
+
+  <!-- ============ MAIN CONTENT (built by saint.js) ============ -->
+  <main class="container saint-main" id="saint-main-content"></main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>☨ رحلة في تاريخ كنيستنا — مادة تاريخ الكنيسة</p>
+      <p class="site-footer__muted">مصمم لمساعدة الطلاب على التعلم والمراجعة بطريقة تفاعلية.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/saint.js"></script>
+</body>
+</html>
